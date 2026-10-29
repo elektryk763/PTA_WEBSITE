@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description"
+    content="Składki członkowskie Polskiego Towarzystwa Akustycznego i dane do opłaty konferencyjnej.">
+
+  <title>Opłaty | PTA Rzeszów</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+  <script src="sponsorzy.js" defer></script>
+
+  <style>
+    .fees-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 32px 0;
+    }
+
+    .fee-card {
+      min-height: 205px;
+      padding: 30px;
+      background: #f6f9f8;
+      border: 1px solid #e3eae7;
+      border-radius: 16px;
+    }
+
+    .fee-card:nth-child(2) {
+      background: #eef8f5;
+    }
+
+    .fee-amount {
+      display: block;
+      margin-bottom: 18px;
+      color: #14584f;
+      font-size: clamp(36px, 4vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.055em;
+      line-height: 1.1;
+    }
+
+    .fee-description {
+      margin-bottom: 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .payment-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 25px;
+      border: 1px solid #dbe8e4;
+      border-radius: 14px;
+      background: #f6faf9;
+      margin-bottom: 25px;
+    }
+
+    .payment-icon {
+      width: 45px;
+      height: 45px;
+      flex: 0 0 45px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #dff3ec;
+      color: #087b6b;
+    }
+
+    .payment-info h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+
+    .payment-info p {
+      margin: 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .payment-details {
+      margin: 0;
+      color: #4f5c6b;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .payment-details a {
+      color: #087b6b;
+      font-weight: 750;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .payment-details a:hover {
+      color: #101a2b;
+    }
+
+    .conference-payment {
+      margin-top: 42px;
+      padding: 28px;
+      border: 1px solid #dbe8e4;
+      border-radius: 16px;
+      background: #f6faf9;
+    }
+
+    .conference-payment h3 {
+      margin: 0 0 10px;
+      font-size: clamp(21px, 2vw, 26px);
+      color: #101a2b;
+    }
+
+    .conference-payment p {
+      margin: 0 0 18px;
+      color: #4f5c6b;
+      line-height: 1.7;
+    }
+
+    .bank-name {
+      display: block;
+      margin-bottom: 7px;
+      color: #4f5c6b;
+    }
+
+    .bank-account {
+      display: block;
+      color: #14584f;
+      font-size: clamp(17px, 2vw, 23px);
+      font-weight: 800;
+      letter-spacing: .01em;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .transfer-title {
+      margin-top: 20px !important;
+      margin-bottom: 0 !important;
+    }
+
+    @media (max-width: 650px) {
+      .fees-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fee-card {
+        min-height: 0;
+        padding: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#tresc">
+    Przejdź do treści
+  </a>
+
+  <!-- WSPÓLNE MENU -->
+  <div id="shared-menu"></div>
+
+  <main id="tresc">
+
+    <!-- NAGŁÓWEK -->
+    <section class="page-hero" id="start">
+      <div class="container page-hero-inner">
+
+        <div class="page-hero-content">
+
+          <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
+            <a href="index.html">Strona główna</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Opłaty</span>
+          </nav>
+
+          <p class="eyebrow eyebrow-light">
+            <span class="eyebrow-line"></span>
+            PTA / RZESZÓW
+          </p>
+
+          <h1>Opłaty.</h1>
+
+          <p class="page-hero-lead">
+            Informacje o składkach członkowskich
+            Polskiego Towarzystwa Akustycznego.
+          </p>
+
+        </div>
+
+        <div class="page-hero-decoration" aria-hidden="true">
+          <div class="page-wave page-wave-a"></div>
+          <div class="page-wave page-wave-b"></div>
+          <div class="page-wave page-wave-c"></div>
+          <div class="page-wave page-wave-d"></div>
+
+          <div class="page-pulse">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKŁADKI CZŁONKOWSKIE -->
+    <section class="section page-content-section" aria-labelledby="skladki-heading">
+
+      <div class="container page-content-grid">
+
+        <article class="page-article">
+
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>
+            POLSKIE TOWARZYSTWO AKUSTYCZNE
+          </p>
+
+          <h2 class="section-heading" id="skladki-heading">
+            Składki <span>członkowskie.</span>
+          </h2>
+
+          <p class="page-lead">
+            Wysokość rocznych składek członkowskich PTA.
+          </p>
+
+          <!-- STAWKI -->
+          <div class="fees-grid">
+
+            <div class="fee-card">
+              <strong class="fee-amount">150 zł</strong>
+
+              <p class="fee-description">
+                Członkowie zwyczajni, nadzwyczajni
+                oraz pracujący emeryci
+              </p>
+            </div>
+
+            <div class="fee-card">
+              <strong class="fee-amount">75 zł</strong>
+
+              <p class="fee-description">
+                Studenci (50% składki podstawowej)
+              </p>
+            </div>
+
+          </div>
+
+
+          <!-- TERMIN PŁATNOŚCI -->
+          <div class="payment-info">
+
+            <span class="payment-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+
+                <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+                <path d="M7 3v4M17 3v4M3 10h18"></path>
+                <path d="m9 16 2 2 4-4"></path>
+
+              </svg>
+            </span>
+
+            <div>
+              <h3>Termin płatności</h3>
+
+              <p>
+                Do <strong>31 marca każdego roku</strong>.
+              </p>
+            </div>
+
+          </div>
+
+
+          <!-- INFORMACJA O ODDZIAŁACH -->
+          <p class="payment-details">
+            Składkę wpłaca się we właściwych
+
+            <a href="https://acoustics.org.pl/pta/#oddzialy" target="_blank" rel="noopener noreferrer">
+              Oddziałach PTA
+            </a>.
+          </p>
+
+
+          <!-- KONTO DO SKŁADEK CZŁONKOWSKICH -->
+          <section class="conference-payment" aria-labelledby="skladki-konto-heading">
+
+            <h3 id="skladki-konto-heading">
+              Wpłata składek członkowskich
+            </h3>
+
+            <p>
+              Składki członkowskie należy wpłacać
+              na poniższy numer konta:
+            </p>
+
+            <span class="bank-name">
+              ING Bank Śląski
+            </span>
+
+            <strong class="bank-account">
+              68 1050 1562 1000 0023 1142 9399
+            </strong>
+
+          </section>
+
+
+
+
+        </article>
+
+
+        <!-- PANEL BOCZNY -->
+        <aside class="page-aside">
+
+          <div class="aside-top">
+            <span>PTA</span>
+            <span class="small-plus">+</span>
+          </div>
+
+          <div>
+
+            <span class="page-aside-label">
+              CZŁONKOSTWO
+            </span>
+
+            <h3>Informacje o składkach.</h3>
+
+            <p>
+              W sprawach związanych z członkostwem
+              i opłatami skontaktuj się
+              z Oddziałem Rzeszowskim PTA.
+            </p>
+
+          </div>
+
+          <a href="kontakt.html">
+            Przejdź do kontaktu
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- WSPÓLNA SEKCJA SPONSORÓW -->
+  <div id="shared-sponsors"></div>
+
+
+  <!-- STOPKA -->
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <a class="footer-brand" href="index.html">
+        PTA<span>.</span>
+        <small>RZESZÓW</small>
+      </a>
+
+      <p>
+        © 2026 Polskie Towarzystwo Akustyczne
+        · Oddział Rzeszów
+      </p>
+
+      <a href="#start">
+        Wróć na górę
+        <span aria-hidden="true">↑</span>
+      </a>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

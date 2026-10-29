@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description"
+    content="Zapisy do Polskiego Towarzystwa Akustycznego – Oddział Rzeszów. Deklaracja członkowska, kontakt i składki.">
+
+  <title>Zapisy do PTA O/Rzeszów | PTA Rzeszów</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+  <script src="sponsorzy.js" defer></script>
+
+  <style>
+    .enroll-steps {
+      display: grid;
+      gap: 15px;
+      margin: 30px 0 42px;
+    }
+
+    .enroll-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 23px;
+      background: #f6f9f8;
+      border: 1px solid #e3eae7;
+      border-radius: 15px;
+    }
+
+    .enroll-step-number {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      border-radius: 12px;
+      background: #def2eb;
+      color: #12685b;
+      font-weight: 800;
+    }
+
+    .enroll-step h3 {
+      margin: 0 0 7px;
+      color: #101a2b;
+      font-size: 18px;
+    }
+
+    .enroll-step p {
+      margin: 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .enroll-step a,
+    .enroll-note a {
+      color: #087b6b;
+      font-weight: 750;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .enroll-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: #14685a;
+      color: #fff !important;
+      text-decoration: none !important;
+      font-size: 13px;
+      font-weight: 750;
+      transition: background .2s ease;
+    }
+
+    .enroll-download:hover {
+      background: #0c5046;
+    }
+
+    .enroll-fees {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 26px 0;
+    }
+
+    .enroll-fee {
+      padding: 26px;
+      background: #f6f9f8;
+      border: 1px solid #e3eae7;
+      border-radius: 15px;
+    }
+
+    .enroll-fee:nth-child(2) {
+      background: #eef8f5;
+    }
+
+    .enroll-fee strong {
+      display: block;
+      margin-bottom: 12px;
+      color: #14584f;
+      font-size: clamp(34px, 4vw, 48px);
+      font-weight: 800;
+      letter-spacing: -.05em;
+    }
+
+    .enroll-fee p {
+      margin: 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .enroll-note {
+      margin-top: 20px;
+      padding: 22px 24px;
+      background: #f6faf9;
+      border-left: 4px solid #168879;
+      border-radius: 0 12px 12px 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .enroll-note p {
+      margin: 0 0 10px;
+    }
+
+    .enroll-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .enroll-subheading {
+      margin: 38px 0 12px;
+      color: #101a2b;
+      font-size: 24px;
+      letter-spacing: -.03em;
+    }
+
+    @media (max-width: 650px) {
+      .enroll-fees {
+        grid-template-columns: 1fr;
+      }
+
+      .enroll-step {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+  <!-- WSPÓLNE MENU -->
+  <div id="shared-menu"></div>
+
+  <main id="tresc">
+
+    <!-- NAGŁÓWEK -->
+    <section class="page-hero" id="start">
+      <div class="container page-hero-inner">
+        <div class="page-hero-content">
+
+          <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
+            <a href="index.html">Strona główna</a>
+            <span aria-hidden="true">/</span>
+            <span>PTA</span>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Zapisy</span>
+          </nav>
+
+          <p class="eyebrow eyebrow-light">
+            <span class="eyebrow-line"></span>
+            PTA / RZESZÓW
+          </p>
+
+          <h1>Zapisy do PTA.</h1>
+          <p class="page-hero-lead">
+            Dołącz do Oddziału Rzeszowskiego Polskiego Towarzystwa Akustycznego.
+          </p>
+        </div>
+
+        <div class="page-hero-decoration" aria-hidden="true">
+          <div class="page-wave page-wave-a"></div>
+          <div class="page-wave page-wave-b"></div>
+          <div class="page-wave page-wave-c"></div>
+          <div class="page-wave page-wave-d"></div>
+          <div class="page-pulse">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CZŁONKOSTWO -->
+    <section class="section page-content-section" aria-labelledby="zapisy-heading">
+      <div class="container page-content-grid">
+        <article class="page-article">
+
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>
+            POLSKIE TOWARZYSTWO AKUSTYCZNE
+          </p>
+
+          <h2 class="section-heading" id="zapisy-heading">
+            Zostań <span>członkiem PTA.</span>
+          </h2>
+
+          <p class="page-lead">
+            Aby zapisać się do Oddziału Rzeszowskiego PTA,
+            pobierz i wypełnij deklarację członkowską,
+            a następnie prześlij ją do sekretarza oddziału.
+          </p>
+
+          <h3 class="enroll-subheading">Jak dołączyć?</h3>
+
+          <div class="enroll-steps">
+
+            <!-- KROK 1 -->
+            <div class="enroll-step">
+              <span class="enroll-step-number">01</span>
+
+              <div>
+                <h3>Pobierz deklarację</h3>
+                <p>Wypełnij formularz deklaracji członkowskiej PTA.</p>
+
+                <a class="enroll-download" href="PLIKI/DOKUMENTY/Deklaracja_pta.docx" download>
+                  Pobierz deklarację (DOCX)
+                  <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- KROK 2 -->
+            <div class="enroll-step">
+              <span class="enroll-step-number">02</span>
+
+              <div>
+                <h3>Prześlij deklarację</h3>
+                <p>
+                  Wyślij wypełniony dokument do sekretarza
+                  Oddziału Rzeszowskiego PTA,
+                  <strong>dr. inż. Marcina Grochowiny</strong>,
+                  na adres
+                  <a href="mailto:gromar@ur.edu.pl">
+                    gromar@ur.edu.pl
+                  </a>
+                  lub
+                  <a href="mailto:pta@ur.edu.pl">
+                    pta@ur.edu.pl
+                  </a>.
+                </p>
+              </div>
+            </div>
+
+            <!-- KROK 3 -->
+            <div class="enroll-step">
+              <span class="enroll-step-number">03</span>
+
+              <div>
+                <h3>Oczekuj na potwierdzenie</h3>
+                <p>
+                  Członkostwo zatwierdza Zarząd Główny PTA.
+                  O decyzji informuje sekretarz właściwego oddziału.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- TERMIN I WPŁATY -->
+          <div class="enroll-note">
+            <p>
+              <strong>Termin opłacenia składki:</strong>
+              do 31 marca każdego roku.
+            </p>
+
+            <p>
+              Składki wpłaca się we właściwych oddziałach PTA.
+              Numer konta i informacje o przelewie znajdziesz
+              na stronie <a href="oplaty.html">Opłaty</a>.
+            </p>
+          </div>
+
+        </article>
+
+        <!-- PANEL BOCZNY -->
+        <aside class="page-aside">
+
+          <div class="aside-top">
+            <span>PTA</span>
+            <span class="small-plus">+</span>
+          </div>
+
+          <div>
+            <span class="page-aside-label">
+              ODDZIAŁ RZESZÓW
+            </span>
+
+            <h3>Dołącz do naszej społeczności.</h3>
+
+            <p>
+              Masz pytania dotyczące deklaracji lub członkostwa?
+              Skontaktuj się z sekretarzem
+              Oddziału Rzeszowskiego PTA.
+            </p>
+          </div>
+
+          <a href="mailto:gromar@ur.edu.pl">
+            Napisz do sekretarza
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </aside>
+      </div>
+    </section>
+
+    <!-- POWIĄZANE STRONY -->
+    <section class="page-related" aria-labelledby="related-heading">
+      <div class="container">
+
+        <div class="page-related-top">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span>
+              ZOBACZ TAKŻE
+            </p>
+
+            <h2 class="section-heading" id="related-heading">
+              Przydatne <span>informacje.</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="related-grid">
+
+          <a class="related-card" href="oplaty.html">
+            <span class="related-title">Opłaty</span>
+            <span class="related-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="related-card" href="https://acoustics.org.pl/pta/statut/">
+            <span class="related-title">Statut PTA</span>
+            <span class="related-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="related-card" href="kontakt.html">
+            <span class="related-title">Kontakt</span>
+            <span class="related-arrow" aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- WSPÓLNI SPONSORZY -->
+  <div id="shared-sponsors"></div>
+
+  <!-- STOPKA -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a class="footer-brand" href="index.html">
+        PTA<span>.</span>
+        <small>RZESZÓW</small>
+      </a>
+
+      <p>
+        © 2026 Polskie Towarzystwo Akustyczne
+        · Oddział Rzeszów
+      </p>
+
+      <a href="#start">
+        Wróć na górę
+        <span aria-hidden="true">↑</span>
+      </a>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

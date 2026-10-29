@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description" content="Zarząd i Komisja Rewizyjna Polskiego Towarzystwa Akustycznego – Oddział Rzeszów.">
+  <title>Zarząd | PTA Rzeszów</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+  <script src="sponsorzy.js" defer></script>
+
+  <style>
+    .board-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 28px 0 40px;
+    }
+
+    .board-card {
+      padding: 28px;
+      background: #f6f9f8;
+      border: 1px solid #e3eae7;
+      border-radius: 16px;
+    }
+
+    .board-card:first-child {
+      background: #eef8f5;
+    }
+
+    .board-role {
+      display: block;
+      margin-bottom: 12px;
+      color: #147567;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .board-name {
+      margin: 0;
+      color: #101a2b;
+      font-size: clamp(17px, 2vw, 21px);
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .board-section-title {
+      margin: 38px 0 18px;
+      color: #101a2b;
+      font-size: clamp(22px, 2.5vw, 27px);
+      letter-spacing: -.03em;
+    }
+
+    .board-commission {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 34px;
+    }
+
+    .board-commission-person {
+      padding: 20px 24px;
+      border: 1px solid #e3eae7;
+      border-radius: 12px;
+      background: #f6f9f8;
+      color: #101a2b;
+      font-weight: 650;
+      line-height: 1.6;
+    }
+
+    .board-webmaster {
+      margin-top: 35px;
+      padding: 24px 28px;
+      border-left: 4px solid #168879;
+      border-radius: 0 14px 14px 0;
+      background: #f6faf9;
+    }
+
+    .board-webmaster p {
+      margin: 8px 0 0;
+      color: #101a2b;
+      font-size: 17px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 650px) {
+      .board-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#tresc">
+    Przejdź do treści
+  </a>
+
+  <!-- WSPÓLNE MENU -->
+  <div id="shared-menu"></div>
+
+  <main id="tresc">
+
+    <!-- NAGŁÓWEK -->
+    <section class="page-hero" id="start">
+      <div class="container page-hero-inner">
+
+        <div class="page-hero-content">
+
+          <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
+            <a href="index.html">Strona główna</a>
+            <span aria-hidden="true">/</span>
+            <a href="o-oddziale.html">O oddziale</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Zarząd</span>
+          </nav>
+
+          <p class="eyebrow eyebrow-light">
+            <span class="eyebrow-line"></span>
+            PTA / RZESZÓW
+          </p>
+
+          <h1>Zarząd.</h1>
+
+          <p class="page-hero-lead">
+            Władze Oddziału Rzeszowskiego
+            Polskiego Towarzystwa Akustycznego.
+          </p>
+
+        </div>
+
+        <div class="page-hero-decoration" aria-hidden="true">
+          <div class="page-wave page-wave-a"></div>
+          <div class="page-wave page-wave-b"></div>
+          <div class="page-wave page-wave-c"></div>
+          <div class="page-wave page-wave-d"></div>
+
+          <div class="page-pulse">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ZARZĄD -->
+    <section class="section page-content-section" aria-labelledby="board-heading">
+
+      <div class="container page-content-grid">
+
+        <article class="page-article">
+
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>
+            POLSKIE TOWARZYSTWO AKUSTYCZNE
+          </p>
+
+          <h2 class="section-heading" id="board-heading">
+            Zarząd <span>oddziału.</span>
+          </h2>
+
+          <p class="page-lead">
+            Skład władz Oddziału Rzeszowskiego PTA.
+          </p>
+
+
+          <!-- CZŁONKOWIE ZARZĄDU -->
+          <div class="board-grid">
+
+            <div class="board-card">
+              <span class="board-role">Przewodnicząca</span>
+              <p class="board-name">
+                prof. dr hab. inż. Lucyna Leniowska
+              </p>
+            </div>
+
+            <div class="board-card">
+              <span class="board-role">Wiceprzewodniczący</span>
+              <p class="board-name">
+                prof. dr hab. inż. Wojciech Rdzanek
+              </p>
+            </div>
+
+            <div class="board-card">
+              <span class="board-role">Sekretarz</span>
+              <p class="board-name">
+                dr inż. Marcin Grochowina
+              </p>
+            </div>
+
+            <div class="board-card">
+              <span class="board-role">Skarbnik</span>
+              <p class="board-name">
+                dr hab. inż. Krzysztof Szemela, prof. UR
+              </p>
+            </div>
+
+          </div>
+
+
+          <!-- KOMISJA REWIZYJNA -->
+          <h3 class="board-section-title">
+            Komisja Rewizyjna
+          </h3>
+
+          <div class="board-commission">
+
+            <div class="board-commission-person">
+              dr hab. inż. Ryszard Leniowski, prof. PRz
+            </div>
+
+            <div class="board-commission-person">
+              mgr inż. Andrzej Leśniak
+            </div>
+
+          </div>
+
+
+          <!-- OSOBA ODPOWIEDZIALNA ZA STRONĘ -->
+          <div class="board-webmaster">
+
+            <span class="board-role">
+              Osoba odpowiedzialna za stronę internetową
+            </span>
+
+            <p>
+              mgr inż. Marcin Pater
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- PANEL BOCZNY -->
+        <aside class="page-aside">
+
+          <div class="aside-top">
+            <span>PTA</span>
+            <span class="small-plus">+</span>
+          </div>
+
+          <div>
+            <span class="page-aside-label">
+              ODDZIAŁ RZESZÓW
+            </span>
+
+            <h3>Kontakt z oddziałem.</h3>
+
+            <p>
+              W sprawach organizacyjnych skontaktuj się
+              z sekretarzem Oddziału Rzeszowskiego PTA.
+            </p>
+          </div>
+
+          <a href="mailto:gromar@ur.edu.pl">
+            Napisz do sekretarza
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- WSPÓLNA SEKCJA SPONSORÓW -->
+  <div id="shared-sponsors"></div>
+
+
+  <!-- STOPKA -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a class="footer-brand" href="index.html">
+        PTA<span>.</span>
+        <small>RZESZÓW</small>
+      </a>
+
+      <p>
+        © 2026 Polskie Towarzystwo Akustyczne
+        · Oddział Rzeszów
+      </p>
+
+      <a href="#start">
+        Wróć na górę
+        <span aria-hidden="true">↑</span>
+      </a>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
