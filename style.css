@@ -390,9 +390,225 @@ a.sponsor-card:hover { border-color: #9acdc2; box-shadow: 0 8px 28px rgba(16,26,
   .sponsor-card { min-height: 98px; padding: 13px; }
   .sponsor-text-logo { font-size: 13px; }
 }
+/*zarząd*/
+ .enroll-steps {
+      display: grid;
+      gap: 15px;
+      margin: 30px 0 42px;
+    }
 
+    .enroll-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 23px;
+      background: #f6f9f8;
+      border: 1px solid #e3eae7;
+      border-radius: 15px;
+    }
 
+    .enroll-step-number {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      border-radius: 12px;
+      background: #def2eb;
+      color: #12685b;
+      font-weight: 800;
+    }
+
+    .enroll-step h3 {
+      margin: 0 0 7px;
+      color: #101a2b;
+      font-size: 18px;
+    }
+
+    .enroll-step p {
+      margin: 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .enroll-step a,
+    .enroll-note a {
+      color: #087b6b;
+      font-weight: 750;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .enroll-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: #14685a;
+      color: #fff !important;
+      text-decoration: none !important;
+      font-size: 13px;
+      font-weight: 750;
+      transition: background .2s ease;
+    }
+
+    .enroll-download:hover {
+      background: #0c5046;
+    }
+
+    .enroll-fees {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 26px 0;
+    }
+
+    .enroll-fee {
+      padding: 26px;
+      background: #f6f9f8;
+      border: 1px solid #e3eae7;
+      border-radius: 15px;
+    }
+
+    .enroll-fee:nth-child(2) {
+      background: #eef8f5;
+    }
+
+    .enroll-fee strong {
+      display: block;
+      margin-bottom: 12px;
+      color: #14584f;
+      font-size: clamp(34px, 4vw, 48px);
+      font-weight: 800;
+      letter-spacing: -.05em;
+    }
+
+    .enroll-fee p {
+      margin: 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .enroll-note {
+      margin-top: 20px;
+      padding: 22px 24px;
+      background: #f6faf9;
+      border-left: 4px solid #168879;
+      border-radius: 0 12px 12px 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .enroll-note p {
+      margin: 0 0 10px;
+    }
+
+    .enroll-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .enroll-subheading {
+      margin: 38px 0 12px;
+      color: #101a2b;
+      font-size: 24px;
+      letter-spacing: -.03em;
+    }
+
+    @media (max-width: 650px) {
+      .enroll-fees {
+        grid-template-columns: 1fr;
+      }
+
+      .enroll-step {
+        padding: 18px;
+      }
+    }
+     .board-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 28px 0 40px;
+    }
+
+    .board-card {
+      padding: 28px;
+      background: #f6f9f8;
+      border: 1px solid #e3eae7;
+      border-radius: 16px;
+    }
+
+    .board-card:first-child {
+      background: #eef8f5;
+    }
+
+    .board-role {
+      display: block;
+      margin-bottom: 12px;
+      color: #147567;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .board-name {
+      margin: 0;
+      color: #101a2b;
+      font-size: clamp(17px, 2vw, 21px);
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .board-section-title {
+      margin: 38px 0 18px;
+      color: #101a2b;
+      font-size: clamp(22px, 2.5vw, 27px);
+      letter-spacing: -.03em;
+    }
+
+    .board-commission {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 34px;
+    }
+
+    .board-commission-person {
+      padding: 20px 24px;
+      border: 1px solid #e3eae7;
+      border-radius: 12px;
+      background: #f6f9f8;
+      color: #101a2b;
+      font-weight: 650;
+      line-height: 1.6;
+    }
+
+    .board-webmaster {
+      margin-top: 35px;
+      padding: 24px 28px;
+      border-left: 4px solid #168879;
+      border-radius: 0 14px 14px 0;
+      background: #f6faf9;
+    }
+
+    .board-webmaster p {
+      margin: 8px 0 0;
+      color: #101a2b;
+      font-size: 17px;
+      font-weight: 750;
+    }
+
+    @media (max-width: 650px) {
+      .board-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 /* AKTUALNOŚCI - BEZ KAFELKÓW */
+
 
 .news-list {
     max-width: 850px;
@@ -435,6 +651,146 @@ a.sponsor-card:hover { border-color: #9acdc2; box-shadow: 0 8px 28px rgba(16,26,
     display: inline-block;
     margin-top: 4px;
 }
+ .fees-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 32px 0;
+    }
+
+    .fee-card {
+      min-height: 205px;
+      padding: 30px;
+      background: #f6f9f8;
+      border: 1px solid #e3eae7;
+      border-radius: 16px;
+    }
+
+    .fee-card:nth-child(2) {
+      background: #eef8f5;
+    }
+
+    .fee-amount {
+      display: block;
+      margin-bottom: 18px;
+      color: #14584f;
+      font-size: clamp(36px, 4vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.055em;
+      line-height: 1.1;
+    }
+
+    .fee-description {
+      margin-bottom: 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .payment-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 25px;
+      border: 1px solid #dbe8e4;
+      border-radius: 14px;
+      background: #f6faf9;
+      margin-bottom: 25px;
+    }
+
+    .payment-icon {
+      width: 45px;
+      height: 45px;
+      flex: 0 0 45px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #dff3ec;
+      color: #087b6b;
+    }
+
+    .payment-info h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+
+    .payment-info p {
+      margin: 0;
+      color: #4f5c6b;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .payment-details {
+      margin: 0;
+      color: #4f5c6b;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .payment-details a {
+      color: #087b6b;
+      font-weight: 750;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .payment-details a:hover {
+      color: #101a2b;
+    }
+
+    .conference-payment {
+      margin-top: 42px;
+      padding: 28px;
+      border: 1px solid #dbe8e4;
+      border-radius: 16px;
+      background: #f6faf9;
+    }
+
+    .conference-payment h3 {
+      margin: 0 0 10px;
+      font-size: clamp(21px, 2vw, 26px);
+      color: #101a2b;
+    }
+
+    .conference-payment p {
+      margin: 0 0 18px;
+      color: #4f5c6b;
+      line-height: 1.7;
+    }
+
+    .bank-name {
+      display: block;
+      margin-bottom: 7px;
+      color: #4f5c6b;
+    }
+
+    .bank-account {
+      display: block;
+      color: #14584f;
+      font-size: clamp(17px, 2vw, 23px);
+      font-weight: 800;
+      letter-spacing: .01em;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .transfer-title {
+      margin-top: 20px !important;
+      margin-bottom: 0 !important;
+    }
+
+    @media (max-width: 650px) {
+      .fees-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fee-card {
+        min-height: 0;
+        padding: 26px;
+      }
+    }
 
  .osa-facts {
       display: grid;
